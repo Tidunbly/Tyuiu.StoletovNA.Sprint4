@@ -1,5 +1,5 @@
-﻿using Tyuiu.StoletovNA.Sprint4.Task0.V2.Lib;
-namespace Tyuiu.StoletovNA.Sprint4.Task0.V2
+﻿using Tyuiu.StoletovNA.Sprint4.Task1.V13.Lib;
+namespace Tyuiu.StoletovNA.Sprint4.Task1.V13
 {
     class Program
     {
@@ -9,25 +9,33 @@ namespace Tyuiu.StoletovNA.Sprint4.Task0.V2
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Одномерные массивы (статический ввод)                                   *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #2                                                            *");
+            Console.WriteLine("* Одномерные массивы. (Ввод с клавиатуры)                                 *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Столетов Никита Андреевич | ИИПБ-24-2                         *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-
+            Console.WriteLine("* УСЛОВИЕ:                                                                *"); 
             
-            Console.WriteLine("*Дан одномерный целочисленный массив на 10 элементов заполненный статическ*");
-            Console.WriteLine("*кими значениями в диапазоне от 0 до 9 подсчитать сумму нечетных элементов*");
-            Console.WriteLine("*в массива.                                                               *");
+            Console.WriteLine("*Дан одномерный целочисленный массив на 10 элементов заполненный значениям*");
+            Console.WriteLine("*ми с клавиатуры в диапазоне от 0 до 8 подсчитать сумму четных элементов м*");
+            Console.WriteLine("*массива.                                                                 *");
 
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int[] array = { 5, 3, 7, 1, 3, 9, 8, 7, 9, 4 };
-            Console.WriteLine("Массив:");
+
+            int[] array = new int[10];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Введите {i} значение массива: ");
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            
+            Console.WriteLine();
+            Console.WriteLine("Массив: ");
             foreach (int numb in array)
             {
                 Console.WriteLine(numb);
@@ -43,7 +51,7 @@ namespace Tyuiu.StoletovNA.Sprint4.Task0.V2
 
             DataService ds = new DataService();
 
-            var result = ds.GetSumOddArrEl(array);
+            var result = ds.Calculate(array);
             Console.WriteLine(result);
             Console.ReadKey();
         }
