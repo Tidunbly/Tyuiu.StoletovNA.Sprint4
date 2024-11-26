@@ -26,7 +26,7 @@ namespace Tyuiu.StoletovNA.Sprint4.Task6.V13
 
             var cars = new string[] { "Ford", "Toyota", "Honda", "Chevrolet", "Mercedes", "BMW", "Audi" };
 
-            Console.WriteLine("Массив: ");
+            Console.WriteLine("Массив:");
             foreach (var car in cars)
             {
                 Console.WriteLine(car);
