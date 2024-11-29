@@ -19,6 +19,7 @@ namespace Tyuiu.StoletovNA.Sprint4.Task7.V24.Test
 
 
             Assert.AreEqual(wait, res);
+
         }
     }
 }
