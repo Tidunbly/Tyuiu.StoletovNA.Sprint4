@@ -41,6 +41,7 @@ namespace Tyuiu.StoletovNA.Sprint4.Task7.V24
                 {
                     Console.Write(str[index] + " ");
                     index++;
+
                    
                 }
                 Console.WriteLine();
