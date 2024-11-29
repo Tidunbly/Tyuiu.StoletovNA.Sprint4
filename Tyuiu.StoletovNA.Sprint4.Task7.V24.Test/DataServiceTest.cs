@@ -16,6 +16,7 @@ namespace Tyuiu.StoletovNA.Sprint4.Task7.V24.Test
             var res = ds.Calculate(rows, cols, str);
             var wait = 1179648;
 
+
             Assert.AreEqual(wait, res);
         }
     }
