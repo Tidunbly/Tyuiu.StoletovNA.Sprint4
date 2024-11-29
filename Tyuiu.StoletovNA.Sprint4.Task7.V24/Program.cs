@@ -45,6 +45,7 @@ namespace Tyuiu.StoletovNA.Sprint4.Task7.V24
                    
                 }
                 Console.WriteLine();
+
             }
 
 
